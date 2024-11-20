@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main>
       <div className="grid justify-center items-center min-h-screen font-[family-name:var(--font-geist-sans)] ">
-        <div className="container space-y-7">
+        <div className="container space-y-7 h-2/3">
           <div className="flex flex-col items-center justify-center">
             <div className="inline-flex">
               <h1 className="text-3xl font-bold pr-3">ToDo List</h1>
