@@ -22,4 +22,8 @@ Add middleware that logs request information
 
 ## 6. Database Interaction
 
-Had a difficult time with TypeScript
+Connected the node.js server to postgresql db using the pg library. Implemented CRUD operations (get, create, update, delete) for a users table. Used parameterized queries to prevent SQL injection. Challenges with TypeScript types.
+
+## 7. Database Schema
+
+Designed a schema with Users, Posts, and Comments tables, maintaining relationships between them.
