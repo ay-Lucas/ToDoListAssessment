@@ -17,6 +17,8 @@ app.get("/", (req, res) => {
 
 app.use("/todos", router);
 
+app.use("/users", userRoutes);
+
 app.listen(port, () => {
   console.log(`Express server running on http://localhost:${port}`);
 });
