@@ -3,12 +3,8 @@ import { LucidePlus } from "lucide-react";
 import { ToDoItem } from "./todo-item";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { ToDo } from "@/types";
 
-export interface ToDo {
-  text: string;
-  id: string;
-  isCompleted: boolean;
-}
 export default function ToDoList({ toDos }: { toDos: ToDo[] }) {
   const [toDoList, setToDoList] = useState<ToDo[]>(toDos);
   const addToDo = () => {
