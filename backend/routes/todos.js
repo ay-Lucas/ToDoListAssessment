@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 const router = Router();
+
 const todos = [
   {
     id: "667bc88b-2e75-4498-94cc-9b47a9db445c",
@@ -22,6 +23,12 @@ const todos = [
 // GET all todos
 router.get("/", (req, res) => {
   res.json(todos);
+});
+
+router.post("/", (req, res) => {
+  const newTodo = { id: `${Date.now()}`, ...req.body };
+  todos.push(newTodo);
+  res.status(201).json(newTodo);
 });
 
 export default router;
